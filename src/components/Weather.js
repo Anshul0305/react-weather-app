@@ -5,12 +5,12 @@ const Weather = props =>
         <div className="weather__info">
             { 
                 props.city && props.country && <p className="weather__key"> Location: 
-                    <span className="weather__value"> {props.city}, {props.country} </span> 
+                    <span className="weather__value"> { props.city }, { props.country } </span> 
                 </p> 
             } 
             { 
                 props.temp && <p className="weather__key"> Temperature: 
-                    <span className="weather__value"> { props.temp} deg C </span> 
+                    <span className="weather__value"> { props.temp } deg C </span> 
                 </p> 
             }
             { 
@@ -25,7 +25,7 @@ const Weather = props =>
             }
             { 
                 props.error && <p className="weather__error"> 
-                    { props.error} 
+                    { props.error } 
                 </p> 
             }
         </div> 
